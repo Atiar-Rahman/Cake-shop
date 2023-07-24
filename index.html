@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake shop</title>
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font assume -->
+    <script src="https://kit.fontawesome.com/09cc0dfcdd.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-popines{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-popines">
+    <header class="container mx-auto">
+        <nav class="bg-orange-200">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-20 rounded-full" src="images/cake logo.avif" alt="cake logo">
+                        <h1 class="text-2xl lg:text-4xl">Best cakes</h1>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li tabindex="0">
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li tabindex="0">
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <ul class="flex gap-5 cursor-pointer">
+                        <li><i class="fa-solid fa-user"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-bag-shopping"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <div class="carousel w-full h-auto lg:h-[50vh] bg-orange-100">
+                <div id="item1" class="carousel-item w-full">
+                    <div class="flex flex-col lg:flex-row justify-between gap-10">
+                        <div class="flex-1 px-10 py-10 lg:py-20 items-center">
+                            <h1 class="text-6xl font-extrabold">Longer Day, <br> More treat</h1>
+                            <p>Snag Same Cool treats now! And we'll deliver them straight to you in temperature controlled packing</p>
+                            <button class="btn btn-secondary">Shop Now</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="/images/slider1.png" class="w-[100%] h-[100%]" />
+                        </div>
+                    </div>
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                    <div class="flex flex-col lg:flex-row justify-between gap-10">
+                        <div class="flex-1  px-10 py-10 lg:py-20 items-center">
+                            <h1 class="text-6xl font-extrabold">Longer Day, <br> More treat</h1>
+                            <p>Snag Same Cool treats now! And we'll deliver them straight to you in temperature controlled packing</p>
+                            <button class="btn btn-secondary">Shop Now</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="/images/slider2.png" class="w-[100%] h-[100%]" />
+                        </div>
+                    </div>
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                    <div class="flex flex-col lg:flex-row justify-between gap-10">
+                        <div class="flex-1 px-10 py-10 lg:py-20 items-center">
+                            <h1 class="text-6xl font-extrabold">Longer Day, <br> More treat</h1>
+                            <p>Snag Same Cool treats now! And we'll deliver them straight to you in temperature controlled packing</p>
+                            <button class="btn btn-secondary">Shop Now</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="/images/slider3.png" class="w-[100%] h-[100%]" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center w-full py-4 gap-2">
+                <a href="#item1" class=" btn-xs"><i class="fa-solid fa-circle"></i></a>
+                <a href="#item2" class=" btn-xs"><i class="fa-solid fa-circle"></i></a>
+                <a href="#item3" class=" btn-xs"><i class="fa-solid fa-circle"></i></a>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
